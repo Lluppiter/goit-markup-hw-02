@@ -1,0 +1,97 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-collor: #212121;
+    --accent-color: #2196F3;
+    --accent-wht-collor: #FFFFFF;
+    --accent-blck-color: #000000;
+    --accent-footer-color: rgba(255, 255, 255, 0.6);
+    --background-color: #F5F4FA;
+    --background-accent-color: #2F303A;
+}
+
+.body{ /*  основыные настройки */ 
+    background-color: var(--accent-wht-collor);
+    color: var(--primary-text-color);
+}
+
+
+ul {/*  форматирование всех списков  */
+    list-style: none;
+}
+
+
+.link {/*  форматирование сылок  */
+    text-decoration: none;
+}
+.link.nav { 
+    color: var(--title-text-collor);
+}
+.link.head{ 
+    color: var(--primary-text-color);
+}
+.link.gmaps{    
+    color: var(--accent-wht-collor);
+}
+.link.footer{   
+    color: var(--accent-footer-color);
+}
+.link:hover,
+.link:focus {
+        color: var(--accent-color);
+}
+.link.nav.current{
+        text-decoration: underline;
+}
+
+
+.logo {/*  форматирование логотипа */
+    color: var(--accent-blck-color);
+    text-decoration: none;
+}
+.logo.footer{
+    color: var(--accent-wht-collor);
+}
+.logo span{
+    color: var(--accent-color);
+}
+
+
+.site-nav a{/*  форматирование списка навигации */
+    color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+
+.section {/* форматирование секций */
+    color: var(--primary-text-color);    
+}
+.section-title {
+    color: var(--title-text-collor);
+}
+
+.button.hero {/* форматирование кнопок */
+    background-color: var(--accent-color);
+    color: var(--accent-wht-collor);
+}
+.button.hero:hover,
+.button.hero:focus{
+    color: var(--accent-color);
+    background-color: var(--accent-wht-collor);
+}
+.button.secondary {
+    color: var(--title-text-collor);
+    background-color: var(--background-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--accent-wht-collor);
+    background-color: var(--accent-color);
+}
+
+
+footer{
+    background-color: var(--background-accent-color);
+}
