@@ -9,13 +9,16 @@
     --background-accent-color: #2F303A;
 }
 
-.body{ /*  основыные настройки */ 
+body{ /*  основыные настройки */ 
     background-color: var(--accent-wht-collor);
     color: var(--primary-text-color);
+
+      
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
-
-ul {/*  форматирование всех списков  */
+ul{
     list-style: none;
 }
 
@@ -25,33 +28,67 @@ ul {/*  форматирование всех списков  */
 }
 .link.nav { 
     color: var(--title-text-collor);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+     
 }
 .link.head{ 
     color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .link.gmaps{    
     color: var(--accent-wht-collor);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;      
 }
 .link.footer{   
     color: var(--accent-footer-color);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 .link:hover,
 .link:focus {
         color: var(--accent-color);
 }
 .link.nav.current{
-        text-decoration: underline;
+        color: var(--accent-color);
+}
+.link.examples{
+    color: var(--primary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;   
 }
 
 
 .logo {/*  форматирование логотипа */
     color: var(--accent-blck-color);
     text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px; /* identical to box height */ 
+
 }
 .logo.footer{
     color: var(--accent-wht-collor);
 }
-.logo span{
+.accent{
     color: var(--accent-color);
 }
 
@@ -64,17 +101,57 @@ ul {/*  форматирование всех списков  */
     color: var(--accent-color);
 }
 
+.hero-title{ /* форматирование главного заголовка */
+    color: var(--accent-wht-collor);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 
 .section {/* форматирование секций */
-    color: var(--primary-text-color);    
+    color: var(--primary-text-color);
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1,71;
+        /* or 171% */
+        letter-spacing: 0.03em;
 }
 .section-title {
-    color: var(--title-text-collor);
+    color: var(--title-text-collor);   
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.sub-title{
+    color: var(--accent-blck-color);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
 }
 
 .button.hero {/* форматирование кнопок */
     background-color: var(--accent-color);
     color: var(--accent-wht-collor);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 .button.hero:hover,
 .button.hero:focus{
@@ -84,6 +161,14 @@ ul {/*  форматирование всех списков  */
 .button.secondary {
     color: var(--title-text-collor);
     background-color: var(--background-color);
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;          
+        text-align: center;
+        letter-spacing: 0.03em;
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -92,6 +177,9 @@ ul {/*  форматирование всех списков  */
 }
 
 
-footer{
+.hero{
     background-color: var(--background-accent-color);
+}
+footer{
+    background-color: var(--background-accent-color);    
 }
