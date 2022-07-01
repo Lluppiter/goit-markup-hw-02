@@ -44,6 +44,14 @@ ul{list-style: none;} /* загальні налаштування перелі�
 .auth{
     color: var(--primary-text-color);    
 }
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+.link.current {
+    color: var(--accent-color);
+}
+    
 
 
 .hero { /* налаштування блоку герой */
@@ -149,28 +157,25 @@ footer { /* загальні налаштування футера */
     color: var(--accent-wht-collor);
 
 }
-.gmaps{ /* налаштування посилань футера */
+.link-gmaps{ /* налаштування посилань футера */
     color: var(--accent-wht-collor);
     
     font-style: normal;
+    text-decoration: none;
     font-weight: 400;    
     line-height: 1.71;    
 }
-.address{
+.link-address{
     color: var(--accent-footer-color);
 
     font-style: normal;
+    text-decoration: none;
     font-weight: 400;    
     line-height: 1.71;
 }
-.link:hover,
-.link:focus {
+.link-address:hover,
+.link-address:focus{
     color: var(--accent-color);
-}
-
-.gmaps:hover,
-.gmaps:focus {
-    color: var(--accent-wht-collor);
 }
 
 .visually-hiden{ /* переховування заголовків */
@@ -186,8 +191,7 @@ footer { /* загальні налаштування футера */
     overflow: hidden;
 }
 
-.link.current{ /*  */
-    color: var(--accent-color);
+
 }
 .button.current{
     color: var(--accent-wht-collor);
